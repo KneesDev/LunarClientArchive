@@ -2,6 +2,7 @@
   <img src="https://i.imgur.com/fOvr3ea.png" data-canonical-src="https://i.imgur.com/fOvr3ea.png" align="right" width="48" height="48" />
   Lunar Client Archive
 </h1>
+
 A website that gives you access to all **Lunar Client launcher** releases.
 
 ## How does it work?

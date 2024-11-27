@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Card from '@/components/ui/card';
 import {
   Table,
@@ -9,7 +10,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import Icon from '@mdi/react';
-import { mdiMicrosoft, mdiApple, mdiLinux, mdiAlert } from '@mdi/js';
+import { mdiMicrosoft, mdiApple, mdiLinux, mdiAlert, mdiAlertBoxOutline } from '@mdi/js';
 
 import { releases } from '@/releases';
 
@@ -29,6 +30,15 @@ export default function Home() {
 
   return (
     <>
+      <Card className="w-full p-4 mb-8 flex items-center space-x-4">
+        <div>
+          <Icon path={mdiAlertBoxOutline} className="w-8 h-8 text-red-500" />
+        </div>
+        <div>
+          <h1 className="font-display text-base">Important Note</h1>
+          <p>Older versions may attempt an update to the latest version of the launcher. To prevent that, you must fully close Lunar Client right after the installation and <Link className="no-underline text-[#DB4040] hover:underline" href="https://www.masterdc.com/help/editing-hosts-file-on-windows-linux-macos/#:~:text=Blocking%20websites%20%E2%80%93%20If%20you%20want,the%20connection%20will%20not%20occur." target="_blank">block <code>launcherupdates.lunarclientcdn.com</code> in <span className="font-semibold">hosts</span></Link>.</p>
+        </div>
+      </Card>
       <div className="space-y-4">
         <h1 className="font-display text-2xl">Launcher</h1>
         <Card className="w-full p-4">

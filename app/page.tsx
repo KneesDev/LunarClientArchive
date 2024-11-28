@@ -59,6 +59,7 @@ export default function Home() {
                     <TableCell className="flex items-center space-x-2">
                       <Image
                         src={isLegacy ? '/assets/icon/legacy.png' : '/assets/icon/new.png'}
+                        className="pointer-events-none"
                         alt=''
                         draggable={false}
                         width={24}
